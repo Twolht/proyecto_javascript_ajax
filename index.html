@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+        <title>Conexion AJAX y logica JS</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="tarjeta-javascript">
+                <div class="title-javascript"><p>JavaScript</p></div>
+
+                <div class="tarjeta-palindromo">
+                    <div class="title"><p>Palindromo</p></div>
+                    <div class="content-input">
+                        <input id="input-palindromo" placeholder="Ingrese una palabra" type="text">
+                    </div>
+                    <div class="content-button">
+                        <button id="button-palindromo" type="button"><i class="bx bx-search-alt"></i></button>
+                    </div>
+                    <div class="content-estado">
+                        <p>Estado: </p>
+                        <span id="estado-palindromo">Sin respuesta</span>
+                    </div>
+                </div> 
+
+                <div class="tarjeta-numero-mayor">
+                    <div class="title"><p>Numero mayor</p></div>
+                    <div class="content-input-numero-uno">
+                        <input id="input-numero-uno" placeholder="Numero 1" type="number">
+                    </div>
+                    <div class="content-input-numero-dos">
+                        <input id="input-numero-dos" placeholder="Numero 2" type="number">
+                    </div>
+                    <div class="content-button">
+                        <button id="button-numero-mayor" type="button">Validar</button>
+                    </div>
+                    <div class="content-estado">
+                        <p>Estado:</p>
+                        <span id="estado-numero-mayor">Sin respuesta</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-mostrar-vocales">
+                    <div class="title"><p>Mostrar vocales</p></div>
+                    <div class="content-input">
+                        <input id="input-mostrar-vocales" placeholder="Escriba una palabra" type="text">
+                    </div>
+                    <div class="content-button">
+                        <button id="button-mostrar-vocales" type="button"><i class="bx bx-search-alt"></i></button>
+                    </div>
+                    <div class="content-estado">
+                        <p>Estado:</p>
+                        <span id="estado-mostrar-vocales">Sin respuesta</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-contar-vocales">
+                    <div class="title"><p>Contar vocales</p></div>
+                    <div class="content-input">
+                        <input id="input-contar-vocales" placeholder="Escriba una palabra" type="text">
+                    </div>
+                    <div class="content-button">
+                        <button id="button-contar-vocales" type="button"><i class="bx bx-search-alt"></i></button>
+                    </div>
+                    <div class="content-estado">
+                        <p>Estado:</p>
+                        <span id="a">Sin respuesta</span>
+                        <span id="e"></span>
+                        <span id="i"></span>
+                        <span id="o"></span>
+                        <span id="u"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-ajax">
+                <div class="title"><p>Ajax</p></div>
+                <div class="tarjeta-peticion">    
+                    <div class="content-url">
+                        <div class="c-url"><p>Url de esta pagina:</p></div>
+                        <div class="c-url"><span id="url"></span></div>
+                    </div>
+                    <div class="content-input-url">
+                        <input type="text" id="input-url" placeholder="Digite una url">
+                    </div>
+                    <div class="content-button">
+                        <button id="button-mostar-contenidos" type="button">Mostrar Contenidos</button>
+                    </div>
+                    <div class="content-peticion">
+                        <div class="content-estado-peticion">
+                            <div class="title"><p>Estado de la peticion: </p></div>
+                            <div class="text-estado-peticion"><span id="estado-peticion">Sin respuesta</span></div>
+                        </div>
+                        
+                        <div class="content-cabeceras">
+                            <div class="title"><p>Respuesta cabecera HTTP: </p></div>
+                            <div class="text-cabeceras"><span id="cabeceras">Sin respuesta</span></div>
+                        </div>
+
+                        <div class="content-codigo-estado">
+                            <div class="title"><p>Codigo de estado: </p></div>
+                            <div class="text-codigo-estado"><span id="codigo-estado">Sin respuesta</span></div>
+                        </div>
+
+                        <div class="content-contenidos">
+                            <div class="title"><p>Contenidos: </p></div>
+                            <div class="text-contenidos"><span id="contenidos">Sin respuesta</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/palindromo.js"></script>
+        <script src="/js/numeroMayor.js"></script>
+        <script src="/js/mostrarVocales.js"></script>
+        <script src="/js/contarVocales.js"></script>
+        <script src="/js/logica_ajax.js"></script>
+    </body>
+</html>
